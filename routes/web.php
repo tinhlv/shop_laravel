@@ -50,14 +50,11 @@ Route::get('/contact', function () {
 Route::get('/track', function () {
     return view('pages.track');
 });
-// admin
-Route::get('/list', function () {
-    return view('admin.pages.list');
-});
-
+// admin=
 Route::get('dashboard', 'Admin\DashboardController@getIndex');
 Route::get('admin/login', 'Admin\LoginController@getLogin');
 Route::post('admin/login', 'Admin\LoginController@postLogin');
+Route::get('list', 'Admin\ProductsController@index');
 Route::get('logout',[ 'uses' => 'Admin\LoginController@getLogout', 'as' => 'logout' ]);
 
 Auth::routes();

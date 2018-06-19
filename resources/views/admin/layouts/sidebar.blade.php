@@ -47,8 +47,7 @@
         </span>
         </a>
         <ul class="treeview-menu">
-          <li><a href="pages/tables/simple.html"><i class="fa fa-circle-o"></i> Simple tables</a></li>
-          <li><a href="pages/tables/data.html"><i class="fa fa-circle-o"></i> Data tables</a></li>
+          <li><a href="{{ url('list')}}"><i class="fa fa-circle-o"></i> List</a></li>
         </ul>
       </li>
     </ul>
