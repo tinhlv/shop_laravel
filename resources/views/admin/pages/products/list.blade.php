@@ -22,18 +22,18 @@
     <div class="col-xs-12">
       <div class="box">
         <div class="box-header">
-          <h3 class="box-title">Data Table With Full Features</h3>
+          <h3 class="box-title">Danh sách sản phẩm</h3>
         </div>
         <!-- /.box-header -->
         <div class="box-body">
           <table id="example1" class="table table-bordered table-striped">
             <thead>
               <tr>
-                <th>Name</th>
-                <th>Price</th>
-                <th>Image</th>
-                <th>Category</th>
-                <th>Action</th>
+                <th>Tên</th>
+                <th>Giá</th>
+                <th>Hình Ảnh</th>
+                <th>Danh Mục</th>
+                <th style="width: 160px;">Thao Tác</th>
               </tr>
             </thead>
             <tbody>
@@ -43,12 +43,12 @@
                   <td>{{$value->price}}</td>
                   <td><img style="max-width: 150px;" src="{{ asset('assets/img/no-image-available.png') }}" alt=""></td>
                   <td>{{ $value->Categories->name }}</td>
-                  <td>
+                  <td style="text-align: center;">
                     <a href="" class="btn btn-primary">
-                      <i class="fa fa-edit"></i> Edit
+                      <i class="fa fa-edit"></i> Sửa
                     </a>
                     <a href="" class="btn btn-danger">
-                      <i class="fa fa-times"></i> Delete
+                      <i class="fa fa-times"></i> Xoá
                     </a>
                   </td>
                 </tr>
@@ -56,11 +56,11 @@
             </tbody>
             <tfoot>
               <tr>
-                <th>Name</th>
-                <th>Price</th>
-                <th>Image</th>
-                <th>Category</th>
-                <th>Action</th>
+                <th>Tên</th>
+                <th>Giá</th>
+                <th>Hình Ảnh</th>
+                <th>Danh Mục</th>
+                <th>Thao Tác</th>
               </tr>
             </tfoot>
           </table>

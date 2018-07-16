@@ -55,6 +55,8 @@ Route::get('dashboard', 'Admin\DashboardController@getIndex');
 Route::get('admin/login', 'Admin\LoginController@getLogin');
 Route::post('admin/login', 'Admin\LoginController@postLogin');
 Route::get('list', 'Admin\ProductsController@index');
+Route::get('/create', ['uses' => 'Admin\ProductsController@getCreate', 'as' => 'getCreate' ]);
+Route::post('/create', ['uses' => 'Admin\ProductsController@postCreate', 'as' => 'postCreate' ]);
 Route::get('logout',[ 'uses' => 'Admin\LoginController@getLogout', 'as' => 'logout' ]);
 
 Auth::routes();

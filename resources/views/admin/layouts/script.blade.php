@@ -18,6 +18,8 @@
 <script src="{{ asset('admin/bower_components/chart.js/Chart.js') }}"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="{{ asset('admin/dist/js/pages/dashboard2.js') }}"></script>
+<!-- CK Editor -->
+<script src="{{ asset('admin/bower_components/ckeditor/ckeditor.js') }}"></script>
 <script>
   $(function () {
     $('#example1').DataTable({
@@ -28,5 +30,10 @@
       'info'        : true,
       'autoWidth'   : false
     })
+  })
+  $(function () {
+    // Replace the <textarea id="editor1"> with a CKEditor
+    // instance, using default configuration.
+    CKEDITOR.replace('content-editor')
   })
 </script>
